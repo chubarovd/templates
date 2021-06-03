@@ -1,0 +1,4 @@
+sample:
+  event-producer:
+    enabled: true
+    event-message: "Hello, User!"

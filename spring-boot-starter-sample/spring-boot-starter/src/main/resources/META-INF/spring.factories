@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.templates.starter_sample.starter.config.SampleEventListenerConfig,\
+  com.templates.starter_sample.starter.config.SampleEventProducerConfig
