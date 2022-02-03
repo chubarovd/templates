@@ -1,6 +1,6 @@
-package semaphore;
+package com.spsamples.semaphore;
 
-import common.AbstractSampleExecutor;
+import com.spsamples.common.AbstractSampleExecutor;
 
 /**
  * Sample of simple {@link java.util.concurrent.Semaphore} usage.
@@ -14,9 +14,12 @@ public class SemaphoreExecutor extends AbstractSampleExecutor {
 
   private final SharedResource<String> resource = new SharedResource<>();
 
-  @Override
-  protected void execute() {
+  public SemaphoreExecutor(String sampleName) {
+    super(sampleName);
+  }
 
+  @Override
+  protected void custom() {
     Thread reader = new Thread(() -> {
       for (int i = 0; i < 5; i++) {
         try {

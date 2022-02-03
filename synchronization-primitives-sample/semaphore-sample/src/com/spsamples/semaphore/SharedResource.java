@@ -1,4 +1,4 @@
-package semaphore;
+package com.spsamples.semaphore;
 
 import java.util.concurrent.Semaphore;
 
