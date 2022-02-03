@@ -24,6 +24,7 @@ public class SemaphoreExecutor extends AbstractSampleExecutor {
       for (int i = 0; i < 5; i++) {
         try {
           resource.read();
+          Thread.sleep(1_000);
         } catch (Exception e) {
           e.printStackTrace();
           return;
@@ -36,6 +37,7 @@ public class SemaphoreExecutor extends AbstractSampleExecutor {
       for (int i = 0; i < 5; i++, letter++) {
         try {
           resource.modify(String.valueOf(letter));
+          Thread.sleep(1_000);
         } catch (Exception e) {
           e.printStackTrace();
           return;
