@@ -3,6 +3,12 @@ package com.spsamples.countdownlatch;
 import com.spsamples.common.AbstractSampleExecutor;
 import java.util.concurrent.CountDownLatch;
 
+/**
+ * Sample of simple {@link java.util.concurrent.CountDownLatch} usage.
+ *
+ * There is two threads: first is just wait when CountDownLatch allows it to do it's job, while
+ * second thread simulates some useful work and decrements the CountDownLatch's count to zero.
+ */
 public class CountDownLatchExecutor extends AbstractSampleExecutor {
 
   private final CountDownLatch cdl = new CountDownLatch(5);
