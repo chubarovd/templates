@@ -1,9 +1,11 @@
 package com.spsamples.countdownlatch;
 
+import com.spsamples.common.AbstractSampleExecutor;
+
 public class Application {
 
   public static void main(String[] args) {
-    CountDownLatchExecutor sample = new CountDownLatchExecutor("CountDownLatch");
+    AbstractSampleExecutor sample = new CountDownLatchExecutor("CountDownLatch");
     sample.execute();
   }
 }
