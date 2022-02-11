@@ -20,7 +20,7 @@ public class ScheduledThreadPoolSample {
     SamplesUtils.printNowActiveWithPrefix(PREFIX);
 
     System.out.println("Schedule task...");
-    Future<?> f = scheduledExecutor.schedule(
+    scheduledExecutor.schedule(
         () -> System.out.println("Hello, world!"),
         3,
         TimeUnit.SECONDS
