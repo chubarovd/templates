@@ -3,7 +3,6 @@ package com.concsamples.execservice;
 import com.concsamples.common.NamedThreadFactory;
 import com.concsamples.common.util.SamplesUtils;
 import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
